@@ -7,6 +7,7 @@
 3. [ディレクトリ構成](#ディレクトリ構成)
 4. [設定方法（フロントエンド）](#設定方法フロントエンド)
 4. [設定方法（バックエンド）](#設定方法バックエンド)
+5. [動作確認](#動作確認)
 
 ## プロジェクトについて
 Firebase Authentication & JWT での認証システム
@@ -182,3 +183,10 @@ npm install
 ```bash
 npm run dev
 ```
+
+## 動作確認
+1. `http://localhost:9000`にアクセス
+2. REGISTER からユーザ登録
+3. LOGIN から ログイン
+![alt text](assets/image1.png)
+4. 認証成功後、'https://takamin.site'へ推移
