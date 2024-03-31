@@ -3,15 +3,13 @@
 
 ## 目次
 1. [プロジェクトについて](#プロジェクトについて)
-2. [環境]
+2. [環境](#環境)
 3. [ディレクトリ構成](#ディレクトリ構成)
 4. [設定方法（フロントエンド）](#設定方法フロントエンド)
 4. [設定方法（バックエンド）](#設定方法バックエンド)
 
 ## プロジェクトについて
 Firebase Authentication & JWT での認証システム
-
-https://github.com/Sugimoto-Takami/quasar_authentication/assets/103258616/1c194128-0f6a-49ed-a65b-8348d7fc16fd
 
 ## 環境
 |言語・フレームワーク |	バージョン |
@@ -27,6 +25,7 @@ https://github.com/Sugimoto-Takami/quasar_authentication/assets/103258616/1c1941
 | Firebase Admin | 12.0.0 |
 | CORS | 2.8.5 |
 | dotenv | 16.4.5 |
+
 ## ディレクトリ構成
 ### フロントエンド
 ```bash
