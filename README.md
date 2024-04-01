@@ -10,7 +10,8 @@
 
 ## プロジェクトについて
 Firebase Authentication & JWT での認証システム
-<img width="739" alt="image" src="https://github.com/Sugimoto-Takami/firebase_quasar_auth/assets/103258616/7aade8c5-a729-4704-a4ad-09b366818477">
+<img width="744" alt="image" src="https://github.com/Sugimoto-Takami/firebase_quasar_auth/assets/103258616/e434df68-e936-4672-8765-0e90b50e38ac">
+
 
 
 ## 環境
