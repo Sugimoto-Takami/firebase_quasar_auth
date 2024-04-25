@@ -1,5 +1,42 @@
 ## 使用技術一覧
 
+```mermaid
+sequenceDiagram
+participant User as User
+participant App as　Application
+participant Functions as Cloud Functions
+participant Auth as Firebase Authentication
+participant Firestore as Cloud Firestore
+
+title 初期登録（相談者）
+participant User as User
+participant App as　Application
+participant Functions as Cloud Functions
+participant Auth as Firebase Authentication
+participant Firestore as Cloud Firestore
+
+User ->> App: メアド + パスワード (+ 名前など) を送信 
+alt キャリコンの場合
+User ->> App: ID + 名前も送信
+end
+App ->> Auth: ヴァリデーション
+Auth -->> App: 結果返却
+alt キャリコンの場合
+App ->> Firestore: ID + 名前の人物が存在しているか確認
+Firestore -->> App: 結果返却
+end
+alt 問題なかった場合
+App -->> User: メアドの検証
+User ->> App: 指定のリンクから確認
+App ->> Functions: Userオブジェクトを保存
+activate Functions
+Functions ->> Firestore: Userオブジェクトを保存
+deactivate Functions
+App -->> User: ログイン画面に推移
+else 問題があった場合
+App -->> User: エラーメッセージを表示
+end
+```
 
 ## 目次
 1. [プロジェクトについて](#プロジェクトについて)
